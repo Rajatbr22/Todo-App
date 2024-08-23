@@ -1,11 +1,9 @@
 import { useState } from "react";
 import TodoItem from "./TodoItem";
-
 import { useContext } from "react";
 import { TodoItemsContext } from "../store/todoContext";
 
 export const TodoItems = () => {
-
     let {todoItems} = useContext(TodoItemsContext);
 
     const [completedTodo, setCompletedTodo] = useState([]);
